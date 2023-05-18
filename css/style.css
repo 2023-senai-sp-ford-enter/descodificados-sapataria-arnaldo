@@ -90,16 +90,20 @@ a:hover{
 }
 
 /*Body Sobre Nós*/
+
 .photoArnaldo {
-    width: 500px;
+    width: 400px;
     height: auto;
     padding: 10px;
-    background-color: var(--letter-color);
+    background-color: #C36A2D;
+    border-radius: 50%;
 }
 
 .textSobreNos{
     display: flex;
     margin: 50px 100px;
+    background-color: #E2C275;
+    padding: 10px;
 }
 
 .onlyTextSobreNos{
@@ -108,8 +112,8 @@ a:hover{
     justify-content: center;
     margin: 50px 50px;
     font-size: 25px;
-    background-color: var(--sub-color);
     padding: 10px;
+    color: #C36A2D;
 }
 
 /*Página Catálogo - produtos*/
