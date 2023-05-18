@@ -40,44 +40,57 @@ a:hover{
 
 /* Página Home */
 .subtitleHome{
-    font-size: 25px;
-    padding: 10px;
+    margin: 10px auto 10px;
+    padding-left: 10px;
+    width: 80%;
+    font-size: 20pt;
+    color: black;
+    justify-content: center;
+    display: flex;
+}
+.titlePrincipal{
+    margin: 40px auto 10px; /*margin: top right bottom left; */
+    padding-left: 10px;
+    width: 80%;
+    font-size: 44pt;
+    font-weight: 700;
+    color: #0e0d0c; /* Código hexadecimal da cor */
+    justify-content: center;
+    display: flex;
 }
 
-.textHome{
-    font-size: 25px;
-    padding: 10px;
-    background-color: var(--sub-color);
+.textHome{   
+padding-left: 10px;
+width: 80%;
+font-size: 20pt;
+color: #0f0f0f;
+justify-content: center;
+display: flex;
 }
 
-.card2Home h1 {
-    font-size: 20px;
-    padding: 20px;
+.card2Home{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
 }
 
 .card2Home h2{
-    font-size: 30px;
-    padding: 20px;
-    background-color: var(--sub-color); 
-    margin: 20px 20px;
-}
-
-.home {
-    width: 100%;
-}
-
-.card2Home {
+    color: white;
+    background:rgb(141, 82, 5);
+    border: 3px solid rgb(134, 112, 112);
+    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    height: 85px;
+    line-height: -2.9;
+    padding-left: 100px;
+    font-size: 30pt;
+    font-style: italic;
 }
-
 
 .imagHome{
-    width: 500px;
-    height: 700px;
-    padding: 10px;
-    background-color: var(--letter-color);
+ width: 500px;
+ height: 500px;
+mix-blend-mode: multiply;
 }
 
 /*Body Sobre Nós*/
@@ -197,3 +210,4 @@ a:hover{
   .main-address p {
     line-height: 1.5;
   }
+  
