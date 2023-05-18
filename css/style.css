@@ -19,16 +19,14 @@ a:link{
     color: var(--color-principal)
 }
 a:visited{
-    color: #ad0505;
+    color: var(--color-text)
     }
 a:hover{
     color: var(--color-text);
     font-size: 30pt;
 }
     
-
-    
-.navbar ul {
+ .navbar ul {
     display: flex;
     justify-content: start;
     border: 3px var(--color-principal);
@@ -81,7 +79,6 @@ a:hover{
     justify-content: space-around;
 }
 
-
 .imagHome{
     width: 500px;
     height: 700px;
@@ -127,11 +124,21 @@ a:hover{
     height: 300px;
 }
 
+.product-belts img {
+    width: 20%;
+    height: 300px;
+}
+
+.product-backpacks img{
+    width: 20%;
+    height: 300px;
+}
+
 .product-shoes h1 {
     text-align: justify;
     font-size: 28pt;
     line-height: 1.5;
- 
+    color: var(--color-text);
     font-weight: bolder;
     border: 3px var(--color-principal);
     background-color: var(--color-principal);
@@ -141,10 +148,32 @@ a:hover{
     text-align: justify;
     font-size: 28pt;
     line-height: 1.5;
-  
+    color: var(--color-text);
     font-weight: bolder;
     border: 3px var(--color-principal);
     background-color: var(--color-principal);
+}
+
+.product-backpacks h1{
+    text-align: justify;
+    font-size: 28pt;
+    line-height: 1.5;
+    color: var(--color-text);
+    font-weight: bolder;
+    border: 3px var(--color-principal);
+    background-color: var(--color-principal);
+
+}
+
+.product-belts h1{
+    text-align: justify;
+    font-size: 28pt;
+    line-height: 1.5;
+    color: var(--color-text);
+    font-weight: bolder;
+    border: 3px var(--color-principal);
+    background-color: var(--color-principal);
+
 }
 
 .page-title{
@@ -164,8 +193,6 @@ a:hover{
     text-align: justify;
     line-height: 2.5;
 }
-
-
 
 /* Página contato - Formulário */
 .contact-section {
