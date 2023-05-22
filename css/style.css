@@ -21,7 +21,7 @@ body{
 }
 
 a:link{
-    color: var(--color-principal)
+    color: #EADCA6;
 }
 a:visited{
     color: var(--color-text)
@@ -159,24 +159,33 @@ justify-content: center;
 }
 
 /*Página Catálogo - produtos*/
+
+
 .product-shoes img {
-    width: 20%;
-    height: 300px;
+    width: 19%;
+    height: 250px;
+    mix-blend-mode: multiply;
 }
 
 .product-bags img {
-    width: 20%;
-    height: 300px;
+    width: 19%;
+    height: 250px;
+    mix-blend-mode: multiply;
+   
 }
 
 .product-belts img {
-    width: 20%;
-    height: 300px;
+    width: 19%;
+    height: 250px;
+    mix-blend-mode: multiply;
+   
 }
 
 .product-backpacks img{
-    width: 20%;
-    height: 300px;
+    width: 19%;
+    height: 250px;
+    mix-blend-mode: multiply;
+    
 }
 
 .product-shoes h1 {
