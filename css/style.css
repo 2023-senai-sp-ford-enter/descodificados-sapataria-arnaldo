@@ -311,4 +311,16 @@ justify-content: center;
   .main-address p {
     line-height: 1.5;
   }
+  .links-sociais img{
+    width: 30px;
+  }
+
+  /*footer*/
+
+  .footer {
+    color: var(--color-text);
+    border: 1px var(--color-principal);
+    background-color: var(--color-principal);
+    text-align: center;
+}
   
