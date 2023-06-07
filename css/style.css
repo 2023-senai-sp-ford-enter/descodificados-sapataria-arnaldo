@@ -1,8 +1,9 @@
 :root {
-  --color-principal: #C36A2D;
-  --color-text: #E2C275;
-  --color-2-text: #bea057;
-  --background: #EADCA6;
+  --color-principal: #E0C097;
+  --color-text: #FFF4F4;
+  --color-2-text: #606C5D;
+  --color-border-box: #F1C376;
+  --background: #ffffff;
   scroll-behavior: smooth;
 }
 body {
@@ -130,7 +131,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   text-align: center;
   font-style: italic;
   padding: 5px;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 .imagHome {
   width: 400px;
@@ -138,7 +139,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   height: 400px;
   mix-blend-mode: multiply;
   justify-content: center;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 
 /*Body Sobre Nós*/
@@ -269,5 +270,5 @@ button {
   background-color: var(--color-principal);
   text-align: center;
   padding: 5px;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
