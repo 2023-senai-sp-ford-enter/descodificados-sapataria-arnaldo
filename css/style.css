@@ -1,326 +1,278 @@
 
+
 body{
     background-color: #f0ebda;
+:root {
+  --color-principal: #C36A2D;
+  --color-text: #E2C275;
+  --color-2-text: #bea057;
+  --background: #EADCA6;
+  scroll-behavior: smooth;
+
 }
-:root{
-    --color-principal: #C36A2D;
-    --color-text: #E2C275;
+body {
+  background-color: var(--background);
 }
+
+
 
 /* Menu navegação */
 
-body{
-  color: black;
+a:link {
+  color: var(--background);
+}
+a:visited {
+  color: var(--color-text)
+}
+a:hover {
+  color: var(--color-text);
+  transform: scale(1, 2);
 }
 
-.banner-header {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: 0% 70%;
-}
 
-a:link{
-    color: #EADCA6;
+.navbar ul {
+  display: flex;
+  justify-content: start;
+  border: 3px var(--color-principal);
+  background-color: var(--color-principal);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-a:visited{
-    color: var(--color-text)
-    }
-a:hover{
-    color: var(--color-text);
-    font-size: 30pt;
-}
-    
- .navbar ul {
-    display: flex;
-    justify-content: start;
-    border: 3px var(--color-principal);
-    background-color: var(--color-principal);
-    position: fixed;
-    top: 0;
-    width: 100%;
+nav>ul>li.catalogo:hover + div.subNav {
+  display: block;
 }
 
 .navbar li {
-    padding: 20px;
-    border-right: 1px solid #bbb;
+  padding: 20px 10px;
+  border-right: 1px solid #bbb;
+}
+.navbar a {
+  text-decoration: none;
+  width: 100%;
+  padding: 20px 10px;
 }
 
-.navbar a {
-    text-decoration: none;
+
+.subNav{
+  position: absolute;
+  top: 55px;
+  left: 188px;
+  border: 3px var(--color-principal);
+  background-color: var(--color-principal);
+  padding: 10px;
+  list-style: none;
+  display: none;
+}
+.subNav li {
+  padding: 10px;
+}
+.subNav a {
+  text-decoration: none;
 }
 
 /* Página Home */
-
-.logotipo {
-  justify-content: space-between;
+.banner-header {
+  width: 100%;
+  height: 355px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  position: relative;
+  top: 50px;
+}
+.logotipo{
   display: flex;
-  margin-left: 1160px;
-  width: 100px;
-  height: 90px;
-  
+  position: absolute;
+  top: 50px;
+  width: 100%;
 }
-.subtitleHome{
-    margin: 10px auto 10px;
-    padding-left: 10px;
-    width: 80%;
-    font-size: 20pt;
-    color: #e2c275;
-    justify-content: center;
-    display: flex;
+.logotipo>img {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 50%;
+  margin: auto;
+  height: 355px;
 }
-.titlePrincipal{
-    margin: 40px auto 10px; /*margin: top right bottom left; */
-    padding-left: 10px;
-    width: 80%;
-    font-size: 44pt;
-    font-weight: 700;
-    color: #c36a2d; /* Código hexadecimal da cor */
-    justify-content: center;
-    display: flex;
-}
-
-.textHome1{   
-padding-left: 10px;
-width: 102%;
-font-size: 20pt;
-color: #e2c275;
-justify-content: center;
-display: flex;
-}
-
-.textHome{
-  margin: 60px auto 10px;
-  margin-bottom: 3%;
-  padding-right: 80px;
-  width: 80%;
-  font-size: 25pt;
-  color: black;
+.subtitleHome {
+  padding: 15px;
+  font-size: 20pt;
+  color: var(--color-2-text);
   justify-content: center;
   display: flex;
 }
-
-.card2Home{
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: space-around;
-   margin-top: 80px;
-   background-color: #e2c275; 
-   
+.titlePrincipal {
+  display: flex;
+  margin-top: 50px;
+  font-size: 44pt;
+  color: var(--color-principal);
+  justify-content: center;
 }
-
-.card2Home h2{
-    color: #e2c275;
-    background:#c36a2d;
-    justify-content: center;
-    display: flex;
-    height: 65px;
-    line-height: -2.9;
-    padding-left: 10px;
-    font-size: 40pt;
-    text-align: center;
-    font-style: italic;
+.textHome {
+  font-size: 25pt;
+  color: var(--color-2-text);
+  justify-content: center;
+  display: flex;
+  padding: 15px;
 }
-
-.imagHome{
- width: 400px;
- display: flex;
- height: 400px;
-mix-blend-mode: multiply;
-justify-content: center;
-
+.card2Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  background-color: var(--color-text);
+}
+.card2Home h2 {
+  color: var(--color-text);
+  background: var(--color-principal);
+  justify-content: center;
+  display: flex;
+  height: 65px;
+  line-height: -2.9;
+  padding-left: 10px;
+  font-size: 40pt;
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  border: 5px solid var(--color-2-text);
+}
+.imagHome {
+  width: 400px;
+  display: flex;
+  height: 400px;
+  mix-blend-mode: multiply;
+  justify-content: center;
+  border: 5px solid var(--color-2-text);
 }
 
 /*Body Sobre Nós*/
-
+.sobreNos{
+  padding: 20px;
+}
 .photoArnaldo {
-    width: 400px;
-    height: auto;
-    padding: 10px;
-    background-color: #C36A2D;
-    border-radius: 50%;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  background-color: var(--color-principal);
+  border-radius: 50%;
 }
-
+.textSobreNos, .textSobreNos2 {
+  display: flex;
+  background-color: var(--color-text);
+  padding: 10px; 
+}
 .textSobreNos{
-    display: flex;
-    margin: 50px 100px;
-    background-color: #E2C275;
-    padding: 10px;
+  margin-top: 50px;
 }
-
-.onlyTextSobreNos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px 50px;
-    font-size: 25px;
-    padding: 10px;
-    color: #C36A2D;
+.onlyTextSobreNos, .onlyTextSobreNos2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 50px;
+  font-size: 30px;
+  padding: 10px;
+  color: var(--color-principal);
 }
 
 /*Página Catálogo - produtos*/
 
-
-.product-shoes img {
-    width: 19%;
-    height: 250px;
-    mix-blend-mode: multiply;
+.product-shoes img, .product-bags img, .product-belts img, .product-backpacks img {
+  width: 19%;
+  height: 250px;
+  mix-blend-mode: multiply;
+  margin: 10px 5px 10px 5px;
 }
-
-.product-bags img {
-    width: 19%;
-    height: 250px;
-    mix-blend-mode: multiply;
-   
+.product-shoes h1, .product-bags h1, .product-backpacks h1, .product-belts h1 {
+  text-align: justify;
+  font-size: 28pt;
+  line-height: 1.5;
+  color: var(--color-text);
+  font-weight: bolder;
+  background-color: var(--color-principal);
+  border: 5px solid var(--color-2-text);
+  padding: 10px 10px 10px 20px;
 }
-
-.product-belts img {
-    width: 19%;
-    height: 250px;
-    mix-blend-mode: multiply;
-   
-}
-
-.product-backpacks img{
-    width: 19%;
-    height: 250px;
-    mix-blend-mode: multiply;
-    
-}
-
-.product-shoes h1 {
-    text-align: justify;
-    font-size: 28pt;
-    line-height: 1.5;
-    color: var(--color-text);
-    font-weight: bolder;
-    border: 3px var(--color-principal);
-    background-color: var(--color-principal);
-}
-
-.product-bags h1 {
-    text-align: justify;
-    font-size: 28pt;
-    line-height: 1.5;
-    color: var(--color-text);
-    font-weight: bolder;
-    border: 3px var(--color-principal);
-    background-color: var(--color-principal);
-}
-
-.product-backpacks h1{
-    text-align: justify;
-    font-size: 28pt;
-    line-height: 1.5;
-    color: var(--color-text);
-    font-weight: bolder;
-    border: 3px var(--color-principal);
-    background-color: var(--color-principal);
-
-}
-
-.product-belts h1{
-    text-align: justify;
-    font-size: 28pt;
-    line-height: 1.5;
-    color: var(--color-text);
-    font-weight: bolder;
-    border: 3px var(--color-principal);
-    background-color: var(--color-principal);
-
-}
-
-.page-title{
-    color: var(--color-principal);
-    font-size: 38pt;
-    font-weight: bolder;
-    font-style: italic;
-    text-align: center;
-    line-height: 2.5;
-
+.page-title {
+  color: var(--color-principal);
+  font-size: 38pt;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  line-height: 2.5;
+  padding-top: 30px;
 }
 .page-subtitle {
-    color: var(--color-text);
-    font-size: 34pt;
-    font-weight: bolder;
-    font-style: normal;
-    text-align: justify;
-    line-height: 2.5;
+  color: var(--color-2-text);
+  font-size: 34pt;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Página contato - Formulário */
 .contact-section {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .contact-form {
-    width: 60%;
-  }
-  
-  .contact-form label {
-    width: 100%;
-    display: block;
-  }
-  
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form select,
-  .contact-form button {
-    width: 100%;
-    margin: 5px 0;
-    box-sizing: border-box;
-  }
-  
-  select {
-    height: 1.4rem;
-    margin: 5px 0;
-  }
-  
-  .contact-form textarea {
-    resize: none;
-    height: 4rem;
-  }
-  
-  button {
-    line-height: 1.5;
-    box-shadow: #c0c1c2 2px 2px 2px;
-    border-radius: 2px;
-    border: none;
-  }
-  
-  .complementary-info {
-    width: 30%;
-  }
-  
-  .address-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .opening-hours h3,
-  .main-address h3 {
-    font-size: 14pt;
-    font-weight: 700;
-    margin: 15px 0;
-  }
-  
-  .main-address p {
-    line-height: 1.5;
-  }
-  .links-sociais img{
-    width: 30px;
-  }
-
-  /*footer*/
-
-  .footer {
-    color: var(--color-text);
-    border: 1px var(--color-principal);
-    background-color: var(--color-principal);
-    text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
-  
+.contact-form {
+  width: 60%;
+}
+.contact-form label {
+  width: 100%;
+  display: block;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+select {
+  height: 1.4rem;
+  margin: 5px 0;
+}
+.contact-form textarea {
+  resize: none;
+  height: 4rem;
+}
+button {
+  line-height: 1.5;
+  box-shadow: #c0c1c2 2px 2px 2px;
+  border-radius: 2px;
+  border: none;
+}
+.complementary-info {
+  width: 30%;
+}
+.address-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.opening-hours h3,
+.main-address h3 {
+  font-size: 14pt;
+  font-weight: 700;
+}
+.main-address p {
+  line-height: 1.5;
+}
+.links-sociais img {
+  width: 30px;
+}
+
+/*footer*/
+.footer {
+  color: var(--color-text);
+  border: 1px var(--color-principal);
+  background-color: var(--color-principal);
+  text-align: center;
+  padding: 5px;
+  border: 5px solid var(--color-2-text);
+}
