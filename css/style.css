@@ -1,12 +1,9 @@
 
-
-body{
-    background-color: #f0ebda;
 :root {
   --color-principal: #C36A2D;
   --color-text: #E2C275;
   --color-2-text: #bea057;
-  --background: #EADCA6;
+  --background: #f0ebda;
   scroll-behavior: smooth;
 
 }
