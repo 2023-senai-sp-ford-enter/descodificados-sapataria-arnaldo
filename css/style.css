@@ -1,12 +1,11 @@
 
 
-body{
-    background-color: #f0ebda;
 :root {
-  --color-principal: #C36A2D;
-  --color-text: #E2C275;
-  --color-2-text: #bea057;
-  --background: #EADCA6;
+  --color-principal:#f58549;
+  --color-text: #ffc9b9;
+  --color-2-text: #ff6b35;
+  --color-3-text: #c08552;
+  --background: #fefee3;
   scroll-behavior: smooth;
 
 }
@@ -97,7 +96,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 .subtitleHome {
   padding: 15px;
   font-size: 20pt;
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   justify-content: center;
   display: flex;
 }
@@ -110,7 +109,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 }
 .textHome {
   font-size: 25pt;
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   justify-content: center;
   display: flex;
   padding: 15px;
@@ -203,7 +202,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   padding-top: 30px;
 }
 .page-subtitle {
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   font-size: 34pt;
   font-weight: bolder;
   font-style: normal;
