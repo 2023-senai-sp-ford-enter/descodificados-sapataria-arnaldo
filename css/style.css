@@ -1,5 +1,6 @@
 
 
+
 :root {
   --color-principal:#f58549;
   --color-text: #ffc9b9;
@@ -134,7 +135,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   text-align: center;
   font-style: italic;
   padding: 5px;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 .imagHome {
   width: 400px;
@@ -142,7 +143,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   height: 400px;
   mix-blend-mode: multiply;
   justify-content: center;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 
 /*Body Sobre Nós*/
@@ -275,3 +276,5 @@ button {
   padding: 5px;
   border: 5px solid var(--color-2-text);
 }
+
+
