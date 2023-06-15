@@ -39,7 +39,7 @@ a:hover {
   top: 0;
   width: 100%;
 }
-nav>ul>li.catalogo:hover + div.subNav {
+.subNav:hover ulgit {
   display: block;
 }
 
@@ -54,7 +54,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 }
 
 
-.subNav{
+.subNav>ul{
   position: absolute;
   top: 55px;
   left: 188px;
