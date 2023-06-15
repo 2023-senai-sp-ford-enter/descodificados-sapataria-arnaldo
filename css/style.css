@@ -211,6 +211,21 @@ a:hover {
   margin-bottom: 20px;
 }
 
+/*Página Produto*/
+.produtoSapato{
+  display: grid;
+  grid-template-columns: 67% 33%;
+  height: 100%vh;
+}
+.produtoSapato img{
+  grid-column: 1;
+  width: 100%;
+}
+.avaliacao{
+  display: flex;
+  grid-column: 2;
+}
+
 /* Página contato - Formulário */
 .contact-section {
   width: 80%;
