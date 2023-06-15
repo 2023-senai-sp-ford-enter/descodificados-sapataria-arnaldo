@@ -38,7 +38,7 @@ a:hover {
   top: 0;
   width: 100%;
 }
-.subNav:hover ulgit {
+.subNav:hover ul{
   display: block;
 }
 
@@ -51,28 +51,27 @@ a:hover {
   width: 100%;
   padding: 20px 10px;
 }
-#shopping_cart{
-  
-  list-style-image: url('sqpurple.gif')
-
-}
-
-
 .subNav>ul{
   position: absolute;
   top: 55px;
-  left: 188px;
+  left: 200px;
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
-  padding: 10px;
   list-style: none;
   display: none;
+  width: 105px;
 }
+
 .subNav li {
   padding: 10px;
 }
 .subNav a {
   text-decoration: none;
+}
+#shopping_cart{
+  
+  list-style-image: url('sqpurple.gif');
+  background-color: var(--color-2-text);
 }
 
 /* Página Home */
