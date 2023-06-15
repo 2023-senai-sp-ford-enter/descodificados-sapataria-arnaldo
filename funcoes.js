@@ -104,7 +104,7 @@ function Avaliar(estrela) {
     
    }
 
-   */
+  
   //Funções do Carrinho//
    if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
