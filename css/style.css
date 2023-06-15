@@ -277,4 +277,24 @@ button {
   border: 5px solid var(--color-2-text);
 }
 
+/*página do produto*/
+
+.page-subtitle2{
+  color: var(--color-3-text);
+  font-size: 15pt;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.paragrafo{
+  color: black;
+  font-size: 15pt;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 
