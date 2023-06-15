@@ -45,7 +45,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 
 .navbar li {
   padding: 20px 10px;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #ec4848;
 }
 .navbar a {
   text-decoration: none;
