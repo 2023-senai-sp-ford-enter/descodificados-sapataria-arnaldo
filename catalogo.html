@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/146899/isolated/lists/ed3b1e0a9563f34da2abff722ba563a3-icone-de-sapato-masculino.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="funcoes.js"></script>
   <title>Sapataria do Arnaldo - Catálogo</title>
 </head>
 
@@ -20,18 +21,19 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="sobreNos.html">Sobre Nós</a></li>
-        <li class="catalogo"><a href="catalogo.html">Catálogo</a></li>
+        <li class="subNav"><a href="catalogo.html">Catálogo</a>
+          <ul>
+            <li><a href="#sapato">Sapatos</a></li>
+            <li><a href="#cinto">Cintos</a></li>
+            <li><a href="#bolsa">Bolsas</a></li>
+            <li><a href="#mochila">Mochilas</a></li>
+          </ul></li>
         <li><a href="contato.html">Contato</a></li>
         <li id="shopping_cart"><a href="/carrinho.html">Carrinho</a></li>
       </ul>
     </nav>
     <div class="subNav">
-       <ul>
-        <li><a href="#sapato">Sapatos</a></li>
-        <li><a href="#cinto">Cintos</a></li>
-        <li><a href="#bolsa">Bolsas</a></li>
-        <li><a href="#mochila">Mochilas</a></li>
-      </ul>
+       
     </div>
   
     <h1 class="page-title">Catálogo</h1>
@@ -41,7 +43,7 @@
   <main>
     <section class="product-shoes">
       <h1 id="sapato"> Sapatos</h1>
-      <img src="pictures/sapato3-masc-transparente.webp" alt="">
+      <a href="./produto.html"><img src="pictures/sapato3-masc-transparente.webp" alt="imagem sapato marrom"></a>
       <img src="pictures/images.jpg" alt="">
       <img src="pictures/sapato4-masc-transparente.webp" alt="">
       <img src="pictures/sapatos-femininos.jpg" alt="">
@@ -74,6 +76,7 @@
       <img src="pictures/Mochila_couro_masculina.webp" alt="">
       <img src="pictures/mochilas-femininas.jpg" alt="">
     </section>
+    
 
   </main>
 

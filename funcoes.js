@@ -1,7 +1,7 @@
-/*function Avaliar(estrela) {
+function Avaliar(estrela) {
     var url = window.location;
     url = url.toString()
-    url = url.split("index.html");
+    url = url.split("catalago.html");
     url = url[0];
    
     var s1 = document.getElementById("s1").src;
@@ -103,6 +103,7 @@
     document.getElementById('rating').innerHTML = avaliacao;
     
    }
+
    */
   //Funções do Carrinho//
    if (document.readyState == 'loading') {
@@ -225,3 +226,4 @@
     totalAmount = totalAmount.replace(".", ",")
     document.querySelector(".cart-total-container span").innerText = "R$" + totalAmount
   }
+   

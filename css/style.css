@@ -1,12 +1,11 @@
 
 
-body{
-    background-color: #f0ebda;}
 :root {
-  --color-principal: #C36A2D;
-  --color-text: #E2C275;
-  --color-2-text: #bea057;
-  --background: #EADCA6;
+  --color-principal:#f58549;
+  --color-text: #ffc9b9;
+  --color-2-text: #ff6b35;
+  --color-3-text: #c08552;
+  --background: #fefee3;
   scroll-behavior: smooth;
 
 }
@@ -39,13 +38,13 @@ a:hover {
   top: 0;
   width: 100%;
 }
-nav>ul>li.catalogo:hover + div.subNav {
+.subNav:hover ulgit {
   display: block;
 }
 
 .navbar li {
   padding: 20px 10px;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #ec4848;
 }
 .navbar a {
   text-decoration: none;
@@ -59,7 +58,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 }
 
 
-.subNav{
+.subNav>ul{
   position: absolute;
   top: 55px;
   left: 188px;
@@ -102,7 +101,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 .subtitleHome {
   padding: 15px;
   font-size: 20pt;
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   justify-content: center;
   display: flex;
 }
@@ -115,7 +114,7 @@ nav>ul>li.catalogo:hover + div.subNav {
 }
 .textHome {
   font-size: 25pt;
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   justify-content: center;
   display: flex;
   padding: 15px;
@@ -140,7 +139,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   text-align: center;
   font-style: italic;
   padding: 5px;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 .imagHome {
   width: 400px;
@@ -148,7 +147,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   height: 400px;
   mix-blend-mode: multiply;
   justify-content: center;
-  border: 5px solid var(--color-2-text);
+  border: 5px solid var(--color-border-box);
 }
 
 /*Body Sobre Nós*/
@@ -208,7 +207,7 @@ nav>ul>li.catalogo:hover + div.subNav {
   padding-top: 30px;
 }
 .page-subtitle {
-  color: var(--color-2-text);
+  color: var(--color-3-text);
   font-size: 34pt;
   font-weight: bolder;
   font-style: normal;
@@ -281,6 +280,7 @@ button {
   padding: 5px;
   border: 5px solid var(--color-2-text);
 }
+
 /*Carrinho*/
 
 :root {
@@ -657,3 +657,6 @@ hr {
     margin-bottom: 16px;
   }
 }
+
+
+
