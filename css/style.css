@@ -348,6 +348,7 @@ a:hover {
   grid-column: 2;
   grid-row: 2;
   padding: 5px;
+  margin-bottom: 460px;
 }
 .avaliacao{
   display: flex;
@@ -358,6 +359,34 @@ a:hover {
 .comentario{
   padding: 15px;
 }
+
+.tamanho{
+ display: inline-block;
+  padding: 3px;
+  margin: 1px;
+  background-color: lightgray;
+  cursor: pointer;
+  grid-column: 2;
+  grid-row: 1;
+  border: 2px solid black;
+  margin-bottom: 50px;
+  
+  
+}
+
+.cor {
+ 
+display: inline-block;
+width: 30px;
+height: 20px;
+border: 2px solid black;
+cursor: pointer;
+grid-column: 2;
+grid-row: 1;
+padding: 4px;
+margin-bottom: 50px;
+}
+
 
 
 /*Página Carrinho*/
@@ -618,6 +647,7 @@ button {
     margin-bottom: 16px;
   }
 }
+
 
 
 
