@@ -13,95 +13,113 @@
   <script src="./funcoes.js"></script>
   <title>Sapataria do Arnaldo - Produtos</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sobreNos.html">Sobre Nós</a></li>
-            <li class="catalogo"><a href="./catalogo.html">Catálogo</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-          </ul>
-        </nav>
-        <div class="subNav">
-           <ul>
-            <li><a href="#sapato">Sapatos</a></li>
-            <li><a href="#cinto">Cintos</a></li>
-            <li><a href="#bolsa">Bolsas</a></li>
-            <li><a href="#mochila">Mochilas</a></li>
-          </ul>
-        </div>
-      </header>
-      
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./sobreNos.html">Sobre Nós</a></li>
+        <li class="catalogo"><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="subNav">
+      <ul>
+        <li><a href="#sapato">Sapatos</a></li>
+        <li><a href="#cinto">Cintos</a></li>
+        <li><a href="#bolsa">Bolsas</a></li>
+        <li><a href="#mochila">Mochilas</a></li>
+      </ul>
+    </div>
+  </header>
+
 
   <h1 class="page-title">Sapato masculino de couro marrom</h1>
-  
-        <section class="produtoSapato">
-        <img src="./pictures/sapato3-masc-transparente.webp" alt="">
 
-        <div class="avaliacao">
-          <h1 id="avaliar"> Avaliações</h1>
+
+
+
+  <section class="produtoSapato">
+    <img src="./pictures/sapato3-masc-transparente.webp" alt="">
+
+    <div class="avaliacao">
+      <h1 id="avaliar"> Avaliações</h1>
+
+      <a href="javascript:void(0)" onclick="Avaliar(1)">
+        <img src="./img/star0.png" id="s1"></a>
+
+      <a href="javascript:void(0)" onclick="Avaliar(2)">
+        <img src="./img/star0.png" id="s2"></a>
+
+      <a href="javascript:void(0)" onclick="Avaliar(3)">
+        <img src="./img/star0.png" id="s3"></a>
+
+      <a href="javascript:void(0)" onclick="Avaliar(4)">
+        <img src="./img/star0.png" id="s4"></a>
+
+      <a href="javascript:void(0)" onclick="Avaliar(5)">
+        <img src="./img/star0.png" id="s5"></a>
+      <p id="rating">0</p>
+
       
-            <a href="javascript:void(0)" onclick="Avaliar(1)">
-              <img src="./img/star0.png" id="s1"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(2)">
-              <img src="./img/star0.png" id="s2"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(3)">
-              <img src="./img/star0.png" id="s3"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(4)">
-              <img src="./img/star0.png" id="s4"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(5)">
-              <img src="./img/star0.png" id="s5"></a>
-              <p id="rating">0</p>
-          </div>
+    </div>
 
-          <div class="descricao">
-            <h2 class="page-subtitle2" >Descrição</h2>
-            <p class="paragrafo" >Sapato casual, que proporciona uma flexibilidade e maior absorção de possíveis impactos.
-            Seu fechamento em cadarço é ideal, para quem busca maior praticidade e conforto. 
-            Esse produto é essencial para quem ama um requinte, mas não abre mão do estilo e praticidade. </p>
-            <h2 class="page-subtitle2">Detalhe do produto</h2>
-              <ul>
-                <li>- Material Externo: Couro;</li>
-                <li>- Material Interno: Couro;</li>
-                <li>- Solado: Borracha; </li>
-                <li>- Fechamento: Cadarço;</li>
-                <li>- Formato do Calçado: Redondo;</li>
-                <li>- Estilo: Casual;</li>
-                <li>- Ocasião: Dia a dia;</li>
-                <li>- Garantia total de 3 meses contra defeitos de fabricação.</li>
-              </ul>
-          </div>
-       </section>
-        
-       <br>
-       <section class="comentario">
-        <h2>Comentários</h2>
-        <form class="contact-form" action="" method="" 
-          onsubmit="alert('Formulário enviado!')">
-          
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" autofocus required>
-  
-          <label for="message">Escreva seu comentário:</label>
-          <textarea id="message" name="message"></textarea>
-          <button>Enviar</button>
-      </section>
+    <div class="descricao">
+      <h2 class="sub_page">Selecione o tamanho:</h2>
+      <div class="tamanho">36</div>
+      <div class="tamanho">37</div>
+      <div class="tamanho">38</div>
+      <div class="tamanho">39</div>
+    
+      <h2 class="sub_page">Selecione a cor:</h2>
+      <div class="cor" style="background-color: red;"></div>
+      <div class="cor" style="background-color: blue;"></div>
+      <div class="cor" style="background-color: green;"></div>
+      <div class="cor" style="background-color: yel low;"></div>
 
-        <footer class="footer">
-          <address class="main-address">
-            <h3><i class="fa-solid fa-house"></i> Endereço:</h3>
-            <p>Rua Forte do Leme, 52</p>
-            <p>Jardim Santa Adélia</p>
-            <p>São Paulo - SP</p>
-            <p>(11) 3214-5678</p>
-          </address>
-      
-        </footer>
+      <h2 class="page-subtitle2">Descrição</h2>
+      <p class="paragrafo">Sapato casual, que proporciona uma flexibilidade e maior absorção de possíveis impactos.
+        Seu fechamento em cadarço é ideal, para quem busca maior praticidade e conforto.
+        Esse produto é essencial para quem ama um requinte, mas não abre mão do estilo e praticidade. </p>
+      <h2 class="page-subtitle2">Detalhe do produto</h2>
+      <ul>
+        <li>- Material Externo: Couro;</li>
+        <li>- Material Interno: Couro;</li>
+        <li>- Solado: Borracha; </li>
+        <li>- Fechamento: Cadarço;</li>
+        <li>- Formato do Calçado: Redondo;</li>
+        <li>- Estilo: Casual;</li>
+        <li>- Ocasião: Dia a dia;</li>
+        <li>- Garantia total de 3 meses contra defeitos de fabricação.</li>
+      </ul>
+    </div>
+  </section>
+
+  <br>
+  <section class="comentario">
+    <h2>Comentários</h2>
+    <form class="contact-form" action="" method="" onsubmit="alert('Formulário enviado!')">
+
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" autofocus required>
+
+      <label for="message">Escreva seu comentário:</label>
+      <textarea id="message" name="message"></textarea>
+      <button>Enviar</button>
+  </section>
+
+  <footer class="footer">
+    <address class="main-address">
+      <h3><i class="fa-solid fa-house"></i> Endereço:</h3>
+      <p>Rua Forte do Leme, 52</p>
+      <p>Jardim Santa Adélia</p>
+      <p>São Paulo - SP</p>
+      <p>(11) 3214-5678</p>
+    </address>
+
+  </footer>
 
 </body>
+
 </html>
