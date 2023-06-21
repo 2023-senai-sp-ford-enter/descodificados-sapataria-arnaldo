@@ -469,6 +469,7 @@ hr {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding: 8%;
 }
 .contact-form {
   width: 60%;
