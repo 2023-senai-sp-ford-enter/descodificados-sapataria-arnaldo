@@ -131,6 +131,7 @@ a:hover {
   transform: scale(1, 2);
 }
 .navbar ul {
+  list-style: none;
   display: flex;
   justify-content: start;
   border: 3px var(--color-principal);
@@ -138,6 +139,7 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  left: 0%;
 }
 .subNav:hover ul{
   display: block;
@@ -152,7 +154,7 @@ a:hover {
   padding: 20px 10px;
 }
 .subNav>ul{
-  position: absolute;
+  position: fixed;
   top: 55px;
   left: 200px;
   border: 3px var(--color-principal);
