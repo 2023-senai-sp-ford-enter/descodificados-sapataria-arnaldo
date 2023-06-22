@@ -128,7 +128,8 @@ a:visited {
 }
 a:hover {
   color: var(--color-text);
-  transform: scale(1, 2);
+  transform: translateY(-10px);
+  transition: .2s;
 }
 .navbar ul {
   list-style: none;
@@ -286,7 +287,6 @@ a:hover {
 .product-shoes img, .product-bags img, .product-belts img, .product-backpacks img {
   width: 19%;
   height: 250px;
-  mix-blend-mode: multiply;
   margin: 10px 5px 10px 5px;
 }
 .product-shoes h1, .product-bags h1, .product-backpacks h1, .product-belts h1 {
@@ -337,20 +337,20 @@ a:hover {
 }
 .produtoSapato{
   display: grid;
-  grid-template-columns: 67% 33%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 30% 70%;
+  padding: 10px;
 }
-.produtoSapato img{
+.produtoSapato>img{
   grid-column: 1;
-  width: 100%;
+  width: 60%;
   grid-row: 1/3;
-  padding: 5px;
+  justify-self: center;
 }
 .descricao{
   grid-column: 2;
   grid-row: 2;
   padding: 5px;
-  margin-bottom: 460px;
 }
 .avaliacao{
   display: flex;
@@ -377,7 +377,6 @@ a:hover {
 }
 
 .cor {
- 
 display: inline-block;
 width: 30px;
 height: 20px;
