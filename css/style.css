@@ -341,13 +341,67 @@ a:hover {
 .produtoSapato{
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 10% 80%;
   padding: 10px;
 }
-.produtoSapato>img{
+
+/*Slide do produto*/
+ .navigation_bar{
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  display: flex;
+  transform: translate(-50%);
+} 
+ input{
+  display: none;
+} 
+.manual_btn{
+  border:2px solid #834104;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.manual_btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual_btn:hover{
+  background-color: rgb(56, 24, 2);
+  transition: .4s;
+}
+.slides{
+  display: flex;
+  width:400%;
+  height:100%;
+}
+.slide{
+  width: 25%;
+  transition: 0.5s;
+}
+#radio1:checked ~.first{
+  margin-left: 0;
+}
+#radio2:checked ~.first{
+  margin-left: -25%;
+
+}#radio3:checked ~.first{
+  margin-left: -50%;
+
+}#radio4:checked ~.first{
+  margin-left: -75%;
+} 
+/*Fim do slide do produto*/
+
+
+.slider{
   grid-column: 1;
-  width: 60%;
+  width: 100%;
   grid-row: 1/3;
+  overflow: hidden;
+  justify-self: center;
+}
+.slider img {
+  width: 60%;
   justify-self: center;
 }
 .descricao{
