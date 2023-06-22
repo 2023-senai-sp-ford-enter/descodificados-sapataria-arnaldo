@@ -124,10 +124,10 @@ a:link {
   color: var(--background);
 }
 a:visited {
-  color: var(--color-text)
+  color: var(--background)
 }
 a:hover {
-  color: var(--color-text);
+  color: var(---color-text);
   transform: translateY(-10px);
   transition: .2s;
 }
@@ -183,13 +183,13 @@ a:hover {
   object-fit: cover;
   object-position: 50% 60%;
   position: relative;
-  top: 50px;
+  top: 58px;
   object-fit: cover;
 }
 .logotipo{
   display: flex;
   position: absolute;
-  top: 50px;
+  top: 58px;
   width: 100%;
 }
 .logotipo>img {
@@ -209,7 +209,7 @@ a:hover {
 }
 .titlePrincipal {
   display: flex;
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 44pt;
   color: var(--color-principal);
   justify-content: center;
