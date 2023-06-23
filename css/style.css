@@ -1,10 +1,10 @@
 
 :root {
-  --color-principal:#f58549;
+  --color-principal:#26282B;
   --color-text: #ffc9b9;
   --color-2-text: #ff6b35;
   --color-3-text: #c08552;
-  --background: #fefee3;
+  --background: #fff;
   --white: #fff;
   --red: #ca6405;
   --gray: #959595;
@@ -146,18 +146,18 @@ a:hover {
   display: block;
 }
 .navbar li {
-  padding: 20px 10px;
+  padding: 20px 0;
   border-right: 1px solid #ec4848;
 }
 .navbar a {
   text-decoration: none;
   width: 100%;
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
 .subNav>ul{
   position: fixed;
   top: 55px;
-  left: 200px;
+  left: 240px;
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
   list-style: none;
@@ -165,10 +165,11 @@ a:hover {
   width: 105px;
 }
 .subNav li {
-  padding: 10px;
+  padding: 4px;
 }
 .subNav a {
   text-decoration: none;
+  padding: 20px;
 }
 #shopping_cart{
   list-style-image: url('sqpurple.gif');
@@ -179,7 +180,7 @@ a:hover {
 /* Página Home */
 .banner-header {
   width: 100%;
-  height: 355px;
+  height: 300px;
   object-fit: cover;
   object-position: 50% 60%;
   position: relative;
@@ -202,6 +203,7 @@ a:hover {
 }
 .subtitleHome {
   padding: 15px;
+  margin-top: 60px;
   font-size: 20pt;
   color: var(--color-3-text);
   justify-content: center;
@@ -228,6 +230,10 @@ a:hover {
   justify-content: center;
   background-color: var(--color-principal);
   margin-bottom: 5px;
+  border-radius: 20px;
+}
+.card2Home h2 {
+  border-radius: 20px;
 }
 .card2Home {
   display: flex;
@@ -253,12 +259,17 @@ a:hover {
 }
 .imagHome {
   height: 400px;
+  width: 300px;
+  object-fit: cover;
 }
 
 
 /*Body Sobre Nós*/
 .sobreNos{
   padding: 20px;
+}
+.sobreNos img{
+  object-fit: cover;
 }
 .photoArnaldo {
   width: 500px;
@@ -269,7 +280,7 @@ a:hover {
 }
 .textSobreNos, .textSobreNos2 {
   display: flex;
-  background-color: var(--color-text);
+  /* background-color: var(--color-text); */
   padding: 10px; 
 }
 .textSobreNos{
@@ -372,7 +383,7 @@ a:hover {
 .slides{
   display: flex;
   width:400%;
-  height:100%;
+  height:90%;
 }
 .slide{
   width: 25%;
@@ -382,13 +393,13 @@ a:hover {
   margin-left: 0;
 }
 #radio2:checked ~.first{
-  margin-left: -25%;
+  margin-right: 25%;
 
 }#radio3:checked ~.first{
-  margin-left: -50%;
+  margin-right: 50%;
 
 }#radio4:checked ~.first{
-  margin-left: -75%;
+  margin-right: 100%;
 } 
 /*Fim do slide do produto*/
 
