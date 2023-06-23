@@ -457,7 +457,7 @@ hr {
 }
 .remove-product-button {
   margin-left: 12px;
-  background: #ff0000;
+  background: red;
   color: var(--white);
   padding: 10px 8px;
   border: 0;
@@ -480,7 +480,7 @@ hr {
 .purchase-button {
   display: flex;
   margin: 24px auto 0;
-  background: var(--blue);
+  background: green;
   color: var(--white);
   border: 0;
   border-radius: 6px;
@@ -492,7 +492,7 @@ hr {
 }
 .purchase-button:hover {
   filter: brightness(0.8);
-  background-color: green;  
+  background-color: rgb(3, 75, 3);  
 }
 
 
