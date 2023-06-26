@@ -179,13 +179,34 @@ a:hover {
 
 /* Página Home */
 .banner-header {
+  background-image: url(./sapataria.jpeg);
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 60%;
+  height: 700px;
+  /* object-position: 50% 60%; */
   position: relative;
   top: 58px;
-  object-fit: cover;
+  text-align: center;
+  background-size: cover;
+  justify-content: center;
+}
+.banner-header h1, h2{
+  background-color: var(--color-principal);
+  color: var(--background);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ 
+}
+.banner-header h1{
+  font-size: 80px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.banner-header h2{
+  font-size: 50px;
+  border-radius: 5px;
+  padding: 5px;
 }
 .logotipo{
   display: flex;
@@ -239,8 +260,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .card2Home h2 {
@@ -327,8 +348,9 @@ a:hover {
   font-size: 34pt;
   font-weight: bolder;
   font-style: normal;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  display: flex;
 }
 
 
