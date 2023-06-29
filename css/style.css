@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 :root {
-  --color-principal:#26282B;
+  --color-principal: #3F2305;
   --color-text: #ffc9b9;
-  --color-2-text: #ff6b35;
+  --color-2-text: #DFD7BF;
   --color-3-text: #c08552;
-  --background: #fff;
+  --background: #F2EAD3;
   --white: #fff;
   --red: #ca6405;
   --gray: #959595;
   --blue: #ff0000;
   scroll-behavior: smooth;
+  font-family: 'Merriweather', sans-serif;
 }
 body {
   background-color: var(--background);
@@ -28,7 +30,6 @@ body {
   padding: 0 16px
 }
 .section-title {
-  font-family: 'Raleway', sans-serif;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -138,6 +139,7 @@ a:hover {
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   left: 0%;
@@ -181,27 +183,30 @@ a:hover {
 .banner-header {
   background-image: url(./sapataria.jpeg);
   width: 100%;
-  height: 700px;
-  /* object-position: 50% 60%; */
+  height: 94vh;
   position: relative;
   top: 58px;
   text-align: center;
   background-size: cover;
   justify-content: center;
+  display: flex;
 }
 .banner-header h1, h2{
-  background-color: var(--color-principal);
   color: var(--background);
-  width: 50%;
+  width: 70%;
+}
+.banner-header h2{
+  background-color: var(--color-principal);
+  border-radius: 15px;
+}
+.banner-header div {
   display: flex;
   justify-content: center;
-  margin: auto;
- 
+  flex-direction: column;
+  align-items: center;
 }
 .banner-header h1{
-  font-size: 80px;
-  border-radius: 5px;
-  padding: 5px;
+  font-size: 140px;
 }
 .banner-header h2{
   font-size: 50px;
@@ -262,7 +267,9 @@ a:hover {
   justify-content: space-around;
   margin-top: 100px;
   margin-bottom: 10px;
+  align-content: center;
   text-align: center;
+  height: calc(100vh - 58px - 120px) ;
 }
 .card2Home h2 {
   color: var(--color-text);
@@ -482,7 +489,7 @@ margin-bottom: 50px;
 
 /*Página Carrinho*/
 body, button, input, textarea {
-  font: 400 16px "Roboto", sans-serif;
+  font: 400 16px
 }
 li {
   list-style-type: none;
