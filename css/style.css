@@ -174,8 +174,9 @@ a:hover {
   padding: 20px;
 }
 #shopping_cart{
+  color: var(--color-principal);
   list-style-image: url('sqpurple.gif');
-  background-color: var(--color-2-text);
+  background-color: var(--color-text);
 }
 
 
@@ -326,20 +327,40 @@ a:hover {
 
 
 /*Página Catálogo*/
+main section {
+  height: calc(100vh - 58px);
+}
+.product-shoes{
+  height: calc(100vh - 90px);
+}
 .product-shoes img, .product-bags img, .product-belts img, .product-backpacks img {
-  width: 19%;
-  height: 250px;
-  margin: 10px 5px 10px 5px;
+  width: 18%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  padding: 5px;
+}
+.productImg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+.productImg>a{
+  width: 18%;
+  height: 400px;
+}
+.productImg>a>img{
+  width: 100%;
+  height: 100%;
 }
 .product-shoes h1, .product-bags h1, .product-backpacks h1, .product-belts h1 {
-  text-align: justify;
-  font-size: 28pt;
-  line-height: 1.5;
+  text-align: center;
+  font-size: 50px;
   color: var(--color-text);
-  font-weight: bolder;
   background-color: var(--color-principal);
-  border: 5px solid var(--color-2-text);
-  padding: 10px 10px 10px 20px;
+  padding: 20px 0px;
 }
 .page-title {
   color: var(--color-principal);
@@ -352,12 +373,12 @@ a:hover {
 }
 .page-subtitle {
   color: var(--color-3-text);
-  font-size: 34pt;
-  font-weight: bolder;
-  font-style: normal;
+  font-size: 50pt;
   margin-bottom: 30px;
-  margin-top: 100px;
-  display: flex;
+  margin-top: 80px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 
