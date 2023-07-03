@@ -576,7 +576,7 @@ hr {
 }
 .remove-product-button {
   margin-left: 12px;
-  background: #ff0000;
+  background: red;
   color: var(--white);
   padding: 10px 8px;
   border: 0;
@@ -617,6 +617,7 @@ hr {
   color: var(--color-3-text);
   text-align: center;
   width: 100%;
+  background-color: rgb(3, 75, 3);  
 }
 
 /* Página contato - Formulário */
