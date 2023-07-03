@@ -159,7 +159,7 @@ a:hover {
 .subNav>ul{
   position: fixed;
   top: 55px;
-  left: 240px;
+  left: 251px;
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
   list-style: none;
@@ -327,7 +327,7 @@ a:hover {
 
 
 /*Página Catálogo*/
-main section {
+.catalogo section {
   height: calc(100vh - 58px);
 }
 .product-shoes{
@@ -406,7 +406,7 @@ main section {
   padding: 10px;
 }
 
-/*Slide do produto*/
+/*Slide do produto
  .navigation_bar{
   position: absolute;
   bottom: 100px;
@@ -451,7 +451,7 @@ main section {
 }#radio4:checked ~.first{
   margin-right: 100%;
 } 
-/*Fim do slide do produto*/
+Fim do slide do produto*/
 
 
 .slider{
@@ -478,6 +478,10 @@ main section {
 }
 .comentario{
   padding: 15px;
+}
+.comentario h2{
+  color: var(--color-3-text);
+  padding: 5px;
 }
 
 .tamanho{
@@ -566,7 +570,7 @@ hr {
   width: 48px;
   height: 34px;
   border-radius: 6px;
-  border: 2px solid var(--blue);
+  border: 2px solid green;
   text-align: center;
   background: #eee;
 }
@@ -607,9 +611,14 @@ hr {
 }
 .purchase-button:hover {
   filter: brightness(0.8);
+  background-color: rgb(14, 100, 14);  
+}
+.main-section h2 {
+  color: var(--color-3-text);
+  text-align: center;
+  width: 100%;
   background-color: rgb(3, 75, 3);  
 }
-
 
 /* Página contato - Formulário */
 .contact-section {
