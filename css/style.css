@@ -128,7 +128,7 @@ a:visited {
   color: var(--background)
 }
 a:hover {
-  color: var(---color-text);
+  color: var(--color-text);
   transform: translateY(-10px);
   transition: .2s;
 }
@@ -160,14 +160,14 @@ a:hover {
   position: fixed;
   top: 55px;
   left: 251px;
-  border: 3px var(--color-principal);
+  /* border: 3px var(--color-principal); */
   background-color: var(--color-principal);
   list-style: none;
   display: none;
   width: 105px;
 }
 .subNav li {
-  padding: 4px;
+  padding: 14px 0px;
 }
 .subNav a {
   text-decoration: none;
@@ -175,8 +175,8 @@ a:hover {
 }
 #shopping_cart{
   color: var(--color-principal);
-  list-style-image: url('sqpurple.gif');
-  background-color: var(--color-text);
+  /* list-style-image: url('sqpurple.gif'); */
+  background-color: var(--gray);
 }
 
 
@@ -198,7 +198,7 @@ a:hover {
 }
 .banner-header h2{
   background-color: var(--color-principal);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .banner-header div {
   display: flex;
@@ -257,10 +257,10 @@ a:hover {
   justify-content: center;
   background-color: var(--color-principal);
   margin-bottom: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .card2Home h2 {
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .card2Home {
   display: flex;
@@ -475,6 +475,11 @@ Fim do slide do produto*/
   grid-column: 2;
   grid-row: 1;
   padding: 5px;
+  background-color: var(--gray);
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--color-principal);
+  align-items: center;
 }
 .comentario{
   padding: 15px;
@@ -483,7 +488,29 @@ Fim do slide do produto*/
   color: var(--color-3-text);
   padding: 5px;
 }
-
+.comentario input {
+  color: var(--background);
+  line-height: 1.5;
+  padding: 0 2px;
+  background: var(--color-principal);
+  font-size: 20px;
+  border-radius: 4px;
+}
+.comentario textarea{
+  color: var(--color-principal);
+  color: var(--background);
+  line-height: 1.5;
+  padding: 0 2px;
+  background: var(--color-principal);
+  font-size: 20px;
+  border-radius: 4px;
+}
+.comentario button{
+  background-color: var(--gray);
+  font-size: 15px;
+  color: var(--color-principal);
+  
+}
 .tamanho{
  display: inline-block;
   padding: 3px;
@@ -494,9 +521,8 @@ Fim do slide do produto*/
   grid-row: 1;
   border: 2px solid black;
   margin-bottom: 50px;
-  
-  
 }
+
 
 .cor {
 display: inline-block;
@@ -611,13 +637,13 @@ hr {
 }
 .purchase-button:hover {
   filter: brightness(0.8);
-  background-color: rgb(14, 100, 14);  
+  background-color: rgb(14, 100, 14);
+  font-size: 23px;  
 }
 .main-section h2 {
   color: var(--color-3-text);
   text-align: center;
-  width: 100%;
-  background-color: rgb(3, 75, 3);  
+  width: 100%; 
 }
 
 /* Página contato - Formulário */
@@ -637,11 +663,18 @@ hr {
 }
 .contact-form input,
 .contact-form textarea,
-.contact-form select,
-.contact-form button {
+.contact-form select, .contact-form button {
   width: 100%;
   margin: 5px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form button{
+  width: 50%;
+  text-align: center;
+  padding: 2px;
 }
 select {
   height: 1.4rem;
