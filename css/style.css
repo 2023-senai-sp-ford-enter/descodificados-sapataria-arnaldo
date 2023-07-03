@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 :root {
-  --color-principal:#f58549;
+  --color-principal: #3F2305;
   --color-text: #ffc9b9;
-  --color-2-text: #ff6b35;
+  --color-2-text: #DFD7BF;
   --color-3-text: #c08552;
-  --background: #fefee3;
+  --background: #F2EAD3;
   --white: #fff;
   --red: #ca6405;
   --gray: #959595;
   --blue: #ff0000;
   scroll-behavior: smooth;
+  font-family: 'Merriweather', sans-serif;
 }
 body {
   background-color: var(--background);
@@ -28,7 +30,6 @@ body {
   padding: 0 16px
 }
 .section-title {
-  font-family: 'Raleway', sans-serif;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -138,6 +139,7 @@ a:hover {
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   left: 0%;
@@ -146,18 +148,18 @@ a:hover {
   display: block;
 }
 .navbar li {
-  padding: 20px 10px;
+  padding: 20px 0;
   border-right: 1px solid #ec4848;
 }
 .navbar a {
   text-decoration: none;
   width: 100%;
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
 .subNav>ul{
   position: fixed;
   top: 55px;
-  left: 200px;
+  left: 240px;
   border: 3px var(--color-principal);
   background-color: var(--color-principal);
   list-style: none;
@@ -165,26 +167,52 @@ a:hover {
   width: 105px;
 }
 .subNav li {
-  padding: 10px;
+  padding: 4px;
 }
 .subNav a {
   text-decoration: none;
+  padding: 20px;
 }
 #shopping_cart{
+  color: var(--color-principal);
   list-style-image: url('sqpurple.gif');
-  background-color: var(--color-2-text);
+  background-color: var(--color-text);
 }
 
 
 /* Página Home */
 .banner-header {
+  background-image: url(./sapataria.jpeg);
   width: 100%;
-  height: 355px;
-  object-fit: cover;
-  object-position: 50% 60%;
+  height: 94vh;
   position: relative;
   top: 58px;
-  object-fit: cover;
+  text-align: center;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+}
+.banner-header h1, h2{
+  color: var(--background);
+  width: 70%;
+}
+.banner-header h2{
+  background-color: var(--color-principal);
+  border-radius: 15px;
+}
+.banner-header div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-header h1{
+  font-size: 140px;
+}
+.banner-header h2{
+  font-size: 50px;
+  border-radius: 5px;
+  padding: 5px;
 }
 .logotipo{
   display: flex;
@@ -202,6 +230,7 @@ a:hover {
 }
 .subtitleHome {
   padding: 15px;
+  margin-top: 60px;
   font-size: 20pt;
   color: var(--color-3-text);
   justify-content: center;
@@ -228,14 +257,20 @@ a:hover {
   justify-content: center;
   background-color: var(--color-principal);
   margin-bottom: 5px;
+  border-radius: 20px;
+}
+.card2Home h2 {
+  border-radius: 20px;
 }
 .card2Home {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  align-content: center;
   text-align: center;
+  height: calc(100vh - 58px - 120px) ;
 }
 .card2Home h2 {
   color: var(--color-text);
@@ -253,12 +288,17 @@ a:hover {
 }
 .imagHome {
   height: 400px;
+  width: 300px;
+  object-fit: cover;
 }
 
 
 /*Body Sobre Nós*/
 .sobreNos{
   padding: 20px;
+}
+.sobreNos img{
+  object-fit: cover;
 }
 .photoArnaldo {
   width: 500px;
@@ -269,7 +309,7 @@ a:hover {
 }
 .textSobreNos, .textSobreNos2 {
   display: flex;
-  background-color: var(--color-text);
+  /* background-color: var(--color-text); */
   padding: 10px; 
 }
 .textSobreNos{
@@ -287,20 +327,40 @@ a:hover {
 
 
 /*Página Catálogo*/
+main section {
+  height: calc(100vh - 58px);
+}
+.product-shoes{
+  height: calc(100vh - 90px);
+}
 .product-shoes img, .product-bags img, .product-belts img, .product-backpacks img {
-  width: 19%;
-  height: 250px;
-  margin: 10px 5px 10px 5px;
+  width: 18%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  padding: 5px;
+}
+.productImg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+.productImg>a{
+  width: 18%;
+  height: 400px;
+}
+.productImg>a>img{
+  width: 100%;
+  height: 100%;
 }
 .product-shoes h1, .product-bags h1, .product-backpacks h1, .product-belts h1 {
-  text-align: justify;
-  font-size: 28pt;
-  line-height: 1.5;
+  text-align: center;
+  font-size: 50px;
   color: var(--color-text);
-  font-weight: bolder;
   background-color: var(--color-principal);
-  border: 5px solid var(--color-2-text);
-  padding: 10px 10px 10px 20px;
+  padding: 20px 0px;
 }
 .page-title {
   color: var(--color-principal);
@@ -313,11 +373,12 @@ a:hover {
 }
 .page-subtitle {
   color: var(--color-3-text);
-  font-size: 34pt;
-  font-weight: bolder;
-  font-style: normal;
+  font-size: 50pt;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 
@@ -341,13 +402,67 @@ a:hover {
 .produtoSapato{
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 10% 80%;
   padding: 10px;
 }
-.produtoSapato>img{
+
+/*Slide do produto*/
+ .navigation_bar{
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  display: flex;
+  transform: translate(-50%);
+} 
+ input{
+  display: none;
+} 
+.manual_btn{
+  border:2px solid #834104;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.manual_btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual_btn:hover{
+  background-color: rgb(56, 24, 2);
+  transition: .4s;
+}
+.slides{
+  display: flex;
+  width:400%;
+  height:90%;
+}
+.slide{
+  width: 25%;
+  transition: 0.5s;
+}
+#radio1:checked ~.first{
+  margin-left: 0;
+}
+#radio2:checked ~.first{
+  margin-right: 25%;
+
+}#radio3:checked ~.first{
+  margin-right: 50%;
+
+}#radio4:checked ~.first{
+  margin-right: 100%;
+} 
+/*Fim do slide do produto*/
+
+
+.slider{
   grid-column: 1;
-  width: 60%;
+  width: 100%;
   grid-row: 1/3;
+  overflow: hidden;
+  justify-self: center;
+}
+.slider img {
+  width: 60%;
   justify-self: center;
 }
 .descricao{
@@ -395,7 +510,7 @@ margin-bottom: 50px;
 
 /*Página Carrinho*/
 body, button, input, textarea {
-  font: 400 16px "Roboto", sans-serif;
+  font: 400 16px
 }
 li {
   list-style-type: none;
