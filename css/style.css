@@ -295,13 +295,13 @@ a:hover {
 
 /*Body Sobre Nós*/
 .sobreNos{
-  padding: 20px;
+  padding: 70px;
 }
 .sobreNos img{
   object-fit: cover;
 }
 .photoArnaldo {
-  width: 500px;
+  width: 700px;
   height: auto;
   padding: 10px;
   background-color: var(--color-principal);
@@ -310,17 +310,30 @@ a:hover {
 .textSobreNos, .textSobreNos2 {
   display: flex;
   /* background-color: var(--color-text); */
-  padding: 10px; 
+  padding: 15px; 
 }
 .textSobreNos{
-  margin-top: 50px;
+  margin-top: 100px;
 }
-.onlyTextSobreNos, .onlyTextSobreNos2 {
+.onlyTextSobreNos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 50px 50px;
+  margin: 100px 80px;
   font-size: 30px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 10px;
+  color: var(--color-principal);
+}
+.onlyTextSobreNos2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 70px 70px;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: justify;
   padding: 10px;
   color: var(--color-principal);
 }
